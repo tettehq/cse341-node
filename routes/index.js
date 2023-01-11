@@ -1,7 +1,7 @@
 const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
-    res.send("Ammon Nii Atiapa Quarshie")
-});
+const myController = require('../controllers');
 
-module.exports = routes;
+routes.get('/', myController.getNames);
+
+module.exports =  routes;
