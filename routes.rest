@@ -1,17 +1,74 @@
 GET http://localhost:8080/contacts/
 ###
-GET http://localhost:8080/contacts/63c32f3450b8dc0f22444a01
+
+GET http://localhost:8080/contacts/63c86e3fb3b6aad7113b2f72
 ###
-GET http://localhost:8080/contacts/63c32f3450b8dc0f22444a02
+
+GET http://localhost:8080/contacts/63c86e40b3b6aad7113b2f73
 ###
-GET http://localhost:8080/contacts/63c32f3450b8dc0f22444a03
+
+GET http://localhost:8080/contacts/63c86e40b3b6aad7113b2f74
+###
+
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json 
+
+{
+    "firstName": "Aaron",
+    "lastName": "Mensah",
+    "email": "aaronmensah@sample.com",
+    "favoriteColor": "black",
+    "birthday": "11/01/98"
+}
+###
+
+PUT http://localhost:8080/contacts/63c86f534b04d202eafec1c8 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Aaron",
+    "lastName": "Mensah",
+    "email": "aaronmensah@sample.com",
+    "favoriteColor": "orange",
+    "birthday": "11/01/98"
+}
+###
+
+DELETE http://localhost:8080/contacts/63c9b2609c18291590e75908 HTTP/1.1
 ###
 
 # PRODUCTION deploy
 GET https://aarontest.onrender.com/contacts/
 ###
-GET https://aarontest.onrender.com/contacts/63c32f3450b8dc0f22444a01
+
+GET https://aarontest.onrender.com/contacts/63c86e3fb3b6aad7113b2f72
 ###
-GET https://aarontest.onrender.com/contacts/63c32f3450b8dc0f22444a02
+
+GET https://aarontest.onrender.com/contacts/63c86e40b3b6aad7113b2f73
 ###
-GET https://aarontest.onrender.com/contacts/63c32f3450b8dc0f22444a03
+
+GET https://aarontest.onrender.com/contacts/63c86e40b3b6aad7113b2f74
+###
+
+POST https://aarontest.onrender.com/contacts/ HTTP/1.1 
+content-type: application/json 
+
+{
+    "firstName": "Aaron",
+    "lastName": "Mensah",
+    "email": "aaronmensah@sample.com",
+    "favoriteColor": "black",
+    "birthday": "11/01/98"
+}
+###
+
+PUT https://aarontest.onrender.com/contacts/63c86e3fb3b6aad7113b2f72 HTTP/1.1 
+content-type: application/json 
+
+{
+    "firstName": "Aaron",
+    "lastName": "Quist",
+    "email": "aquist@sample.com",
+    "favoriteColor": "Orange",
+    "birthday": "11/11/91"
+}
