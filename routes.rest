@@ -72,3 +72,6 @@ content-type: application/json
     "favoriteColor": "Orange",
     "birthday": "11/11/91"
 }
+###
+
+DELETE https://aarontest.onrender.com/contacts/63c9b64fc46d27f1193c9885 HTTP/1.1
