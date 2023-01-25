@@ -11,6 +11,7 @@
         "no-shadow":"off",
         "spaced-comment":"warn",
         "prefer-destructuring":"off",
-        "import/order":"off"
+        "import/order":"off",
+        "import/no-extraneous-dependencies":"off"
     }
   }
