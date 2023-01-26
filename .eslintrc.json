@@ -12,6 +12,9 @@
         "spaced-comment":"warn",
         "prefer-destructuring":"off",
         "import/order":"off",
-        "import/no-extraneous-dependencies":"off"
+        "import/no-extraneous-dependencies":"off",
+        "no-underscore-dangle":"off",
+        "consistent-return":"warn",
+        "import/newline-after-import":"warn"
     }
   }
