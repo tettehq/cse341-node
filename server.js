@@ -18,7 +18,7 @@ const config = {
   secret: process.env.SECRET
 };
 
-// auth router attaches /login, /logout, and /callback routes to the baseURL
+// // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
 // req.isAuthenticated is provided from the auth router
@@ -38,7 +38,7 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
-  .use('/authorized', require('./routes'));
+  .use('/', require('./routes'));
 
 mongodb.initDb((err) => {
   if (err) {
